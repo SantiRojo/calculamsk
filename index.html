@@ -13,56 +13,159 @@
     <title>CalculaMSK</title>
 </head>
 <body>
-  <header class="title-container">
-    <h1>CalculaMSK</h1>
+
+  <header id="header" class="title-container">
+    <h1 id="appTitle">CalculaMSK</h1>
   </header>
 
   <main>
-    <section id="calcs-container">
-      <article class="calc-container tpa">
-        <a href="https://santirojo.github.io/calculadora-de-tpa/" target="_blank">
-          <div class="calc-icon-container">
-            <img class="calc-icon" src="/media/icons/tpa.png" alt="TPA">
-          </div>
-          <h2 class="calc-title">TPA</h2>
-        </a>
+
+    <!-- Home  -->
+
+    <section id="calcsGridContainer" class="calcs-grid--container inactive">
+
+      <article class="calc-item tpa">
+        <div class="calc-icon-container">
+          <img class="calc-icon" src="/media/icons/tpa.png" alt="TPA">
+        </div>
+        <h2 class="calc-title">TPA</h2>
       </article>
 
-      <article class="calc-container derivaciones">
-        <a href="https://santirojo.github.io/calculadora-de-derivaciones/" target="_blank">
-          <div class="calc-icon-container">
-            <img class="calc-icon" src="/media/icons/derivaciones.png" alt="Derivaciones">
-          </div>
-          <h2 class="calc-title">Derivaciones</h2>
-        </a>
+      <article class="calc-item derivaciones">
+        <div class="calc-icon-container">
+          <img class="calc-icon" src="/media/icons/derivaciones.png" alt="Derivaciones">
+        </div>
+        <h2 class="calc-title">Derivaciones</h2>
       </article>
 
-      <article class="calc-container" nps>
-        <a href="https://santirojo.github.io/calculadora-de-nps/" target="_blank">
-          <div class="calc-icon-container">
-            <img class="calc-icon" src="/media/icons/nps.png" alt="nps">
-          </div>
-          <h2 class="calc-title">NPS</h2>
-        </a>
+      <article class="calc-item nps">
+        <div class="calc-icon-container">
+          <img class="calc-icon" src="/media/icons/nps.png" alt="nps">
+        </div>
+        <h2 class="calc-title">NPS</h2>
       </article>
 
-      <article class="calc-container reingreso">
-        <a href="https://santirojo.github.io/calculadora-de-reingreso/" target="_blank">
-          <div class="calc-icon-container">
-            <img class="calc-icon" src="/media/icons/reingreso.png" alt="reingreso">
-          </div>
-          <h2 class="calc-title">Reingreso</h2>
-        </a>
+      <article class="calc-item reingreso">
+        <div class="calc-icon-container">
+          <img class="calc-icon" src="media/icons/reingreso.png" alt="reingreso">
+        </div>
+        <h2 class="calc-title">Reingreso</h2>
       </article>
       
     </section>
 
-    <section>
-      <p>Acá irán las calculadoras</p>
+    <!-- Calculadoras -->
+
+    <section class="app-container">
+
+      <form class="frontcard">
+
+        <!-- Inputs TPA -->
+
+        <section id="containerObjetivoTPA" class="form-container container-objetivo">
+              
+          <h2 class="form-tittle form-tittle-objetivo">OBJETIVO</h2>
+                
+          <div class="btns-container">
+
+						<button id="btnAdecuado" class="obj-btn">Adecuado</button>
+
+						<button id="btnSobresaliente" class="obj-btn">Sobresaliente</button>
+
+          </div>
+
+        </section>
+
+        <section id="containerCumplimientoTPA" class="form-container container-cumplimiento">
+
+          <h2 class="form-tittle form-tittle-cumplimiento">CUMPLIMIENTO</h2>
+                
+            <div class="input-container">
+              <input id="inputCumplimientoTPA" type="number" inputmode="numeric" placeholder="Ingresa tu % de cumplimiento">
+            </div>
+
+        </section>
+
+        <section id="containerAtendidasTPA" class="form-container container-atendidas">
+
+          <h2 class="form-tittle form-tittle-detractores">ATENDIDAS</h2>
+                
+          <div class="input-container">
+            <input id="inputAtendidasTPA" type="number" inputmode="numeric" placeholder="Cantidad de llamadas atendidas">
+          </div>
+                
+        </section>
+
+        <!-- Inputs Derivaciones -->
+
+        <section id="containerObjetivoDerivaciones" class="form-container container-atendidas">
+
+          <h2 class="form-tittle form-tittle-detractores">OBJETIVO</h2>
+                
+          <div class="input-container">
+            <input id="inputObjetivoDerivaciones" type="number" inputmode="numeric" placeholder="Ingresa tu % de objetivo">
+          </div>
+                
+        </section>
+
+        <section id="containerAtendidasDerivaciones" class="form-container container-atendidas">
+
+          <h2 class="form-tittle form-tittle-detractores">ATENDIDAS</h2>
+                
+          <div class="input-container">
+            <input id="inputAtendidasDerivaciones" type="number" inputmode="numeric" placeholder="Cantidad de llamadas atendidas">
+          </div>
+                
+        </section>
+
+        <section id="containerDerivadas" class="form-container container-atendidas">
+
+          <h2 class="form-tittle form-tittle-detractores">DERIVADAS</h2>
+                
+          <div class="input-container">
+            <input id="inputDerivadas" type="number" inputmode="numeric" placeholder="Cantidad de llamadas derivadas">
+          </div>
+                
+        </section>
+
+
+      </form>
+
+      <section class="backcard">
+
+        <section class="card">
+          <section class="container-titulo-card">
+            <p class="titulo-card"></p>
+          </section>
+
+          <section class="container-desempenio">
+            <p class="desempenio">Tu desempeño es del:</p>
+            <div class="container-porcentaje">
+                <p class="porcentaje"></p>
+            </div>
+          </section>
+
+          <section class="container-mensaje">
+            <p id="mensaje"></p>
+            <p id="mensaje-objetivo"></p>
+          </section>
+
+        </section>
+
+      </section>
+      
     </section>
+    
+    <section id="calcBtnContainer">
+          
+      <button id="calcButton" class="calc-button button-off" disabled><span id="calcular">Calcular</span><span id="cerrado" class="inactive">X</span></button>
+
+    </section>
+
+
   </main>
 
-  <aside>
+  <aside id="directAccesses" class="inactive">
     <article id="coordiMSKBot" class="access-container">
       <a href="">
         <div class="access-icon-container">
@@ -96,6 +199,8 @@
 		</div>
 	</footer>
 
-  <script src="app.js"></script>
+  <script src="/src/nodes.js"></script>
+  <script src="/src/main.js"></script>
+  <script src="/src/navigation.js"></script>
 </body>
 </html>
