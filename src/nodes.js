@@ -12,7 +12,7 @@ const reingresoCalcItem = document.querySelector('.reingreso');
 const directAccesses = document.querySelector('#directAccesses');
 
 // CALC
-const appContainer = document.querySelector('.app-container');
+const appContainer = document.querySelector('#appContainer');
 const frontcard = document.querySelector('.frontcard');
 const backcard = document.querySelector('.backcard');
 
