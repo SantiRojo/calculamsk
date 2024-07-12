@@ -39,7 +39,7 @@ a {
 .calcs-grid--container {
   width: 300px;
   height: 300px;
-  padding: 60px 0px;
+  padding: 60px 0px 0px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -103,6 +103,7 @@ a {
 }
 
 aside {
+  margin-bottom: 30px;
   height: 165px;
   display: flex;
   flex-direction: column;

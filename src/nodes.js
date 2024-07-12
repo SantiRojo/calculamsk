@@ -25,10 +25,7 @@ const mensajeCard = document.querySelector('#mensaje');
 const mensajeObjetivo = document.querySelector('#mensaje-objetivo');
 
 /* Inputs TPA */
-
-const containerObjetivoTPA = document.querySelector('#containerObjetivoTPA');
-const containerCumplimientoTPA = document.querySelector('#containerCumplimientoTPA');
-const containerAtendidasTPA = document.querySelector('#containerAtendidasTPA');
+const inputsTPA = document.querySelector('#inputsTPA');
 
 const btnAdecuado = document.querySelector('#btnAdecuado');
 const btnSobresaliente = document.querySelector('#btnSobresaliente');
@@ -36,10 +33,7 @@ const inputCumplimientoTPA = document.querySelector('#inputCumplimientoTPA');
 const inputAtendidasTPA = document.querySelector('#inputAtendidasTPA');
 
 /* Inputs Derivaciones */
-
-const containerObjetivoDerivaciones = document.querySelector('#containerObjetivoDerivaciones');
-const containerAtendidasDerivaciones = document.querySelector('#containerAtendidasDerivaciones');
-const containerDerivadas = document.querySelector('#containerDerivadas');
+const inputsDerivaciones = document.querySelector('#inputsDerivaciones');
 
 const inputObjetivoDerivaciones = document.querySelector('#inputObjetivoDerivaciones');
 const inputAtendidasDerivaciones = document.querySelector('#inputAtendidasDerivaciones');
@@ -47,6 +41,19 @@ const inputDerivadas = document.querySelector('#inputDerivadas');
 
 /* Inputs NPS */
 
+const inputsNPS = document.querySelector('#inputsNPS');
+
+const inputPromotores = document.querySelector('#inputPromotores');
+const inputNeutros = document.querySelector('#inputNeutros');
+const inputDetractores = document.querySelector('#inputDetractores');
+
+/* Inputs Reingreso */
+
+const inputsReingreso = document.querySelector('#inputsReingreso');
+
+const inputObjetivoReingreso = document.querySelector('#inputObjetivoReingreso');
+const inputAtendidasReingreso = document.querySelector('#inputAtendidasReingreso');
+const inputReingresadas = document.querySelector('#inputReingresadas');
 
 
 /* Calc button */

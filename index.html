@@ -22,7 +22,7 @@
 
     <!-- Home  -->
 
-    <section id="calcsGridContainer" class="calcs-grid--container inactive">
+    <section id="calcsGridContainer" class="calcs-grid--container">
 
       <article class="calc-item tpa">
         <div class="calc-icon-container">
@@ -56,81 +56,162 @@
 
     <!-- Calculadoras -->
 
-    <section class="app-container">
+    <section class="app-container inactive">
 
+      <!-- App frontal -->
       <form class="frontcard">
 
         <!-- Inputs TPA -->
 
-        <section id="containerObjetivoTPA" class="form-container container-objetivo">
-              
-          <h2 class="form-tittle form-tittle-objetivo">OBJETIVO</h2>
+        <section id="inputsTPA" class="inactive">
+
+          <section id="containerObjetivoTPA" class="form-container">
                 
-          <div class="btns-container">
-
-						<button id="btnAdecuado" class="obj-btn">Adecuado</button>
-
-						<button id="btnSobresaliente" class="obj-btn">Sobresaliente</button>
-
-          </div>
-
-        </section>
-
-        <section id="containerCumplimientoTPA" class="form-container container-cumplimiento">
-
-          <h2 class="form-tittle form-tittle-cumplimiento">CUMPLIMIENTO</h2>
-                
-            <div class="input-container">
-              <input id="inputCumplimientoTPA" type="number" inputmode="numeric" placeholder="Ingresa tu % de cumplimiento">
+            <h2 class="form-tittle form-tittle-objetivo">OBJETIVO</h2>
+                  
+            <div class="btns-container">
+  
+              <button id="btnAdecuado" class="obj-btn">Adecuado</button>
+  
+              <button id="btnSobresaliente" class="obj-btn">Sobresaliente</button>
+  
             </div>
+  
+          </section>
+  
+          <section id="containerCumplimientoTPA" class="form-container">
+  
+            <h2 class="form-tittle form-tittle-cumplimiento">CUMPLIMIENTO</h2>
+                  
+              <div class="input-container">
+                <input id="inputCumplimientoTPA" type="number" inputmode="numeric" placeholder="Ingresa tu % de cumplimiento">
+              </div>
+  
+          </section>
+  
+          <section id="containerAtendidasTPA" class="form-container">
+  
+            <h2 class="form-tittle form-tittle-detractores">ATENDIDAS</h2>
+                  
+            <div class="input-container">
+              <input id="inputAtendidasTPA" type="number" inputmode="numeric" placeholder="Cantidad de llamadas atendidas">
+            </div>
+                  
+          </section>
 
-        </section>
-
-        <section id="containerAtendidasTPA" class="form-container container-atendidas">
-
-          <h2 class="form-tittle form-tittle-detractores">ATENDIDAS</h2>
-                
-          <div class="input-container">
-            <input id="inputAtendidasTPA" type="number" inputmode="numeric" placeholder="Cantidad de llamadas atendidas">
-          </div>
-                
         </section>
 
         <!-- Inputs Derivaciones -->
 
-        <section id="containerObjetivoDerivaciones" class="form-container container-atendidas">
+        <section id="inputsDerivaciones" class="inactive">
 
-          <h2 class="form-tittle form-tittle-detractores">OBJETIVO</h2>
-                
-          <div class="input-container">
-            <input id="inputObjetivoDerivaciones" type="number" inputmode="numeric" placeholder="Ingresa tu % de objetivo">
-          </div>
-                
+          <section id="containerObjetivoDerivaciones" class="form-container">
+  
+            <h2 class="form-tittle form-tittle-detractores">OBJETIVO</h2>
+                  
+            <div class="input-container">
+              <input id="inputObjetivoDerivaciones" type="number" inputmode="numeric" placeholder="Ingresa tu % de objetivo">
+            </div>
+                  
+          </section>
+  
+          <section id="containerAtendidasDerivaciones" class="form-container">
+  
+            <h2 class="form-tittle form-tittle-detractores">ATENDIDAS</h2>
+                  
+            <div class="input-container">
+              <input id="inputAtendidasDerivaciones" type="number" inputmode="numeric" placeholder="Cantidad de llamadas atendidas">
+            </div>
+                  
+          </section>
+  
+          <section id="containerDerivadas" class="form-container">
+  
+            <h2 class="form-tittle form-tittle-detractores">DERIVADAS</h2>
+                  
+            <div class="input-container">
+              <input id="inputDerivadas" type="number" inputmode="numeric" placeholder="Cantidad de llamadas derivadas">
+            </div>
+                  
+          </section>
+
         </section>
 
-        <section id="containerAtendidasDerivaciones" class="form-container container-atendidas">
+        <!-- Inputs NPS -->
 
-          <h2 class="form-tittle form-tittle-detractores">ATENDIDAS</h2>
-                
-          <div class="input-container">
-            <input id="inputAtendidasDerivaciones" type="number" inputmode="numeric" placeholder="Cantidad de llamadas atendidas">
-          </div>
-                
+        <section id="inputsNPS" class="inactive">
+
+          <section id="containerPromotores" class="form-container">
+  
+            <h2 class="form-tittle form-tittle-detractores">PROMOTORES</h2>
+                  
+            <div class="input-container">
+              <input id="inputPromotores" type="number" inputmode="numeric" placeholder="Ingresa la cantidad de promotores">
+            </div>
+                  
+          </section>
+  
+          <section id="containerNeutros" class="form-container">
+  
+            <h2 class="form-tittle form-tittle-detractores">NEUTROS</h2>
+                  
+            <div class="input-container">
+              <input id="inputNeutros" type="number" inputmode="numeric" placeholder="Ingresa la cantidad de neutros">
+            </div>
+                  
+          </section>
+  
+          <section id="containerDetractores" class="form-container">
+  
+            <h2 class="form-tittle form-tittle-detractores">DETRACTORES</h2>
+                  
+            <div class="input-container">
+              <input id="inputDetractores" type="number" inputmode="numeric" placeholder="Ingresa la cantidad de detractores">
+            </div>
+                  
+          </section>
+
         </section>
 
-        <section id="containerDerivadas" class="form-container container-atendidas">
+        <!-- Inputs Reingreso -->
 
-          <h2 class="form-tittle form-tittle-detractores">DERIVADAS</h2>
-                
-          <div class="input-container">
-            <input id="inputDerivadas" type="number" inputmode="numeric" placeholder="Cantidad de llamadas derivadas">
-          </div>
-                
+        <section id="inputsReingreso" class="inactive">
+
+          <section id="containerObjetivoReingreso" class="form-container">
+  
+            <h2 class="form-tittle form-tittle-detractores">OBJETIVO</h2>
+                  
+            <div class="input-container">
+              <input id="inputObjetivoReingreso" type="number" inputmode="numeric" placeholder="Ingresa la cantidad de promotores">
+            </div>
+                  
+          </section>
+  
+          <section id="containerAtendidasReingreso" class="form-container">
+  
+            <h2 class="form-tittle form-tittle-detractores">ATENDIDAS</h2>
+                  
+            <div class="input-container">
+              <input id="inputAtendidasReingreso" type="number" inputmode="numeric" placeholder="Ingresa la cantidad de neutros">
+            </div>
+                  
+          </section>
+  
+          <section id="containerReingresadas" class="form-container">
+  
+            <h2 class="form-tittle form-tittle-detractores">REINGRESADAS</h2>
+                  
+            <div class="input-container">
+              <input id="inputReingresadas" type="number" inputmode="numeric" placeholder="Ingresa la cantidad de detractores">
+            </div>
+                  
+          </section>
+
         </section>
-
 
       </form>
 
+      <!-- App trasera -->
       <section class="backcard">
 
         <section class="card">
@@ -156,16 +237,19 @@
       
     </section>
     
-    <section id="calcBtnContainer">
+    <!-- Botón Calcular -->
+
+    <section id="calcBtnContainer" class="inactive">
           
-      <button id="calcButton" class="calc-button button-off" disabled><span id="calcular">Calcular</span><span id="cerrado" class="inactive">X</span></button>
+      <button id="calcButton" class="calc-button button-off inactive" disabled><span id="calcular">Calcular</span><span id="cerrado" class="inactive">X</span></button>
 
     </section>
 
 
   </main>
 
-  <aside id="directAccesses" class="inactive">
+  <aside id="directAccesses">
+
     <article id="coordiMSKBot" class="access-container">
       <a href="">
         <div class="access-icon-container">
