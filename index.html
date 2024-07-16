@@ -14,7 +14,11 @@
 </head>
 <body>
 
+  
   <header id="header" class="title-container">
+    <div id="backBtn" class="back-btn inactive">
+      <img src="./media/icons/arrow-back.png" alt="Atrás">
+    </div>
     <h1 id="appTitle" class="home-title">CalculaMSK</h1>
   </header>
 
@@ -59,7 +63,7 @@
     <section id="appContainer" class="app-container inactive">
 
       <!-- App frontal -->
-      <form class="frontcard">
+      <form class="front-card">
 
         <!-- Inputs TPA -->
 
@@ -67,7 +71,7 @@
 
           <section id="containerObjetivoTPA" class="form-container">
                 
-            <h2 class="form-tittle form-tittle-objetivo">OBJETIVO</h2>
+            <h2 class="form-title form-title-objetivo-tpa">OBJETIVO</h2>
                   
             <div class="btns-container">
   
@@ -81,7 +85,7 @@
   
           <section id="containerCumplimientoTPA" class="form-container">
   
-            <h2 class="form-tittle form-tittle-cumplimiento">CUMPLIMIENTO</h2>
+            <h2 class="form-title form-title-cumplimiento-tpa">CUMPLIMIENTO</h2>
                   
               <div class="input-container">
                 <input id="inputCumplimientoTPA" type="number" inputmode="numeric" placeholder="Ingresa tu % de cumplimiento">
@@ -91,7 +95,7 @@
   
           <section id="containerAtendidasTPA" class="form-container">
   
-            <h2 class="form-tittle form-tittle-detractores">ATENDIDAS</h2>
+            <h2 class="form-title form-title-atendidas-tpa">ATENDIDAS</h2>
                   
             <div class="input-container">
               <input id="inputAtendidasTPA" type="number" inputmode="numeric" placeholder="Cantidad de llamadas atendidas">
@@ -107,7 +111,7 @@
 
           <section id="containerObjetivoDerivaciones" class="form-container">
   
-            <h2 class="form-tittle form-tittle-detractores">OBJETIVO</h2>
+            <h2 class="form-title form-title-objetivo-derivaciones">OBJETIVO</h2>
                   
             <div class="input-container">
               <input id="inputObjetivoDerivaciones" type="number" inputmode="numeric" placeholder="Ingresa tu % de objetivo">
@@ -117,7 +121,7 @@
   
           <section id="containerAtendidasDerivaciones" class="form-container">
   
-            <h2 class="form-tittle form-tittle-detractores">ATENDIDAS</h2>
+            <h2 class="form-title form-title-atendidas-derivaciones">ATENDIDAS</h2>
                   
             <div class="input-container">
               <input id="inputAtendidasDerivaciones" type="number" inputmode="numeric" placeholder="Cantidad de llamadas atendidas">
@@ -127,7 +131,7 @@
   
           <section id="containerDerivadas" class="form-container">
   
-            <h2 class="form-tittle form-tittle-detractores">DERIVADAS</h2>
+            <h2 class="form-title form-title-derivadas">DERIVADAS</h2>
                   
             <div class="input-container">
               <input id="inputDerivadas" type="number" inputmode="numeric" placeholder="Cantidad de llamadas derivadas">
@@ -143,7 +147,7 @@
 
           <section id="containerPromotores" class="form-container">
   
-            <h2 class="form-tittle form-tittle-detractores">PROMOTORES</h2>
+            <h2 class="form-title form-title-promotores">PROMOTORES</h2>
                   
             <div class="input-container">
               <input id="inputPromotores" type="number" inputmode="numeric" placeholder="Ingresa la cantidad de promotores">
@@ -153,7 +157,7 @@
   
           <section id="containerNeutros" class="form-container">
   
-            <h2 class="form-tittle form-tittle-detractores">NEUTROS</h2>
+            <h2 class="form-title form-title-neutros">NEUTROS</h2>
                   
             <div class="input-container">
               <input id="inputNeutros" type="number" inputmode="numeric" placeholder="Ingresa la cantidad de neutros">
@@ -163,7 +167,7 @@
   
           <section id="containerDetractores" class="form-container">
   
-            <h2 class="form-tittle form-tittle-detractores">DETRACTORES</h2>
+            <h2 class="form-title form-title-detractores">DETRACTORES</h2>
                   
             <div class="input-container">
               <input id="inputDetractores" type="number" inputmode="numeric" placeholder="Ingresa la cantidad de detractores">
@@ -179,7 +183,7 @@
 
           <section id="containerObjetivoReingreso" class="form-container">
   
-            <h2 class="form-tittle form-tittle-detractores">OBJETIVO</h2>
+            <h2 class="form-title form-title-objetivo-reingreso">OBJETIVO</h2>
                   
             <div class="input-container">
               <input id="inputObjetivoReingreso" type="number" inputmode="numeric" placeholder="Ingresa tu % de objetivo">
@@ -189,7 +193,7 @@
   
           <section id="containerAtendidasReingreso" class="form-container">
   
-            <h2 class="form-tittle form-tittle-detractores">ATENDIDAS</h2>
+            <h2 class="form-title form-title-atendidas-reingreso">ATENDIDAS</h2>
                   
             <div class="input-container">
               <input id="inputAtendidasReingreso" type="number" inputmode="numeric" placeholder="Cantidad de llamadas atendidas">
@@ -199,7 +203,7 @@
   
           <section id="containerReingresadas" class="form-container">
   
-            <h2 class="form-tittle form-tittle-detractores">REINGRESADAS</h2>
+            <h2 class="form-title form-title-reingresadas">REINGRESADAS</h2>
                   
             <div class="input-container">
               <input id="inputReingresadas" type="number" inputmode="numeric" placeholder="Cantidad de llamadas reingresadas">
@@ -212,7 +216,7 @@
       </form>
 
       <!-- App trasera -->
-      <section class="backcard">
+      <section class="back-card">
 
         <section class="card">
           <section class="container-titulo-card">
@@ -284,7 +288,8 @@
 	</footer>
 
   <script src="/src/nodes.js"></script>
-  <script src="/src/main.js"></script>
   <script src="/src/navigation.js"></script>
+  <script src="/src/visuals.js"></script>
+  <script src="/src/main.js"></script>
 </body>
 </html>

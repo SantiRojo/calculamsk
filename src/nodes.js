@@ -1,5 +1,6 @@
 // HEADER
 const headerSection = document.querySelector('#header');
+const backBtn = document.querySelector('#backBtn');
 const appTitle = document.querySelector('#appTitle');
 
 // HOME
@@ -13,8 +14,8 @@ const directAccesses = document.querySelector('#directAccesses');
 
 // CALC
 const appContainer = document.querySelector('#appContainer');
-const frontcard = document.querySelector('.frontcard');
-const backcard = document.querySelector('.backcard');
+const frontCard = document.querySelector('.front-card');
+const backCard = document.querySelector('.back-card');
 
 const containerTituloCard = document.querySelector('.container-titulo-card');
 const tituloCard = document.querySelector('.titulo-card');

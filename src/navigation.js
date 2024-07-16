@@ -21,6 +21,7 @@ function navigator() {
 };
 
 function home() {
+  backBtn.classList.add('inactive');
   appTitle.innerHTML = 'CalculaMSK';
   appTitle.classList.remove('tpa-title');
   appTitle.classList.remove('derivaciones-title');
@@ -36,6 +37,7 @@ function home() {
 };
 
 function calcTPA() {
+  backBtn.classList.remove('inactive');
   appTitle.innerHTML = 'Calculadora de TPA';
   appTitle.classList.remove('home-title');
   appTitle.classList.add('tpa-title');
@@ -54,6 +56,7 @@ function calcTPA() {
 };
 
 function calcDerivaciones() {
+  backBtn.classList.remove('inactive');
   appTitle.innerHTML = 'Calculadora de Derivaciones';
   appTitle.classList.remove('home-title');
   appTitle.classList.add('derivaciones-title');
@@ -71,6 +74,7 @@ function calcDerivaciones() {
 };
 
 function calcNPS() {
+  backBtn.classList.remove('inactive');
   appTitle.innerHTML = 'Calculadora de NPS';
   appTitle.classList.remove('home-title');
   appTitle.classList.add('nps-title');
@@ -88,6 +92,7 @@ function calcNPS() {
 }
 
 function calcReingreso() {
+  backBtn.classList.remove('inactive');
   appTitle.innerHTML = 'Calculadora de Reingreso';
   appTitle.classList.remove('home-title');
   appTitle.classList.add('reingreso-title');
