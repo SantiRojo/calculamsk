@@ -1,7 +1,7 @@
 const animar = () => {
     
-  frontCard.classList.toggle('front-rotate');
-  backCard.classList.toggle('back-rotate');
+  frontCard.classList.toggle('front-card-rotate');
+  backCard.classList.toggle('back-card-rotate');
   calcularSpan.classList.toggle('inactive');
   cerrarSpan.classList.toggle('inactive');
   calcButton.classList.toggle('cerrar');

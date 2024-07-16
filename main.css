@@ -132,7 +132,7 @@ a {
   border-radius: 0px 0px 10px 10px;
 }
 
-.title-container, .frontcard, .backcard {
+.title-container, .front-card, .back-card {
   width: 340px;
   background-color: #E3CCAE;
   border: 2px solid #C09D6F ;
@@ -148,7 +148,7 @@ a {
   height: 415px;
 }
 
-.frontcard, .backcard {
+.front-card, .back-card {
   height: 415px;
   flex-direction: column;
   justify-content: center;
@@ -157,20 +157,20 @@ a {
   transition: ease-in-out 600ms;
 }
 
-.frontcard {
+.front-card {
   position: absolute;
 }
 
-.frontcard-rotate{
+.front-card-rotate{
   transform: rotateY(180deg);
 }
 
-.backcard{
+.back-card{
   position: absolute;
   transform: rotateY(180deg);
 }
 
-.backcard-rotate{
+.back-card-rotate{
   transform: rotateY(360deg);
 }
 
@@ -600,4 +600,8 @@ footer p {
 
 .inactive {
   display: none;
+}
+
+.hidden {
+  visibility: hidden;
 }
