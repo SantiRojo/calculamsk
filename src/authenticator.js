@@ -1,4 +1,4 @@
-async function validate(acreditationNumber) {
+async function auth(acreditationNumber) {
 
   await fetch('https://apimocha.com/nominamsk/nomina')
           .then(response => response.json())
