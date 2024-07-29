@@ -1,26 +1,45 @@
-window.addEventListener('load', () => {
-  location.hash = '#home';
-})
-window.addEventListener('DOMContentLoaded', navigator);
-window.addEventListener('hashchange', navigator);
+const validarVariables = (input1, input2, input3) => {
 
-function navigator() {
-  console.log({ location });
+  if ( !(input1)  || !(input2) || !(input3) ) {
 
-  if (location.hash.startsWith('#calculadora-de-tpa')) {
-    calcTPA();
-  } else if (location.hash.startsWith('#calculadora-de-derivaciones')) {
-    calcDerivaciones();
-  } else if (location.hash.startsWith('#calculadora-de-nps')) {
-    calcNPS();
-  } else if (location.hash.startsWith('#calculadora-de-reingreso')) {
-    calcReingreso();
+      calcButton.setAttribute('disabled', true);
+      calcButton.classList.add('button-off')
+      calcButton.classList.remove('button-on');
+      console.log('if');
+
   } else {
-    home();
+      calcButton.removeAttribute('disabled');
+      calcButton.classList.add('button-on');
+      calcButton.classList.remove('button-off');
+      console.log('else')
   }
+
+  console.log('Se ejecutó la función');
+  console.log(input1, input2, input3);
+}
+
+const animar = () => {
+    
+  frontCard.classList.toggle('front-card-rotate');
+  backCard.classList.toggle('back-card-rotate');
+  calcularSpan.classList.toggle('inactive');
+  cerrarSpan.classList.toggle('inactive');
+  calcButton.classList.toggle('cerrar');
+
 };
 
-function home() {
+const aplicarEstilos = () => {
+
+  resultTitleContainer.classList.toggle(resultadoMetrica[0].estilos);
+  resultTitle.innerText = resultadoMetrica[0].resultado;
+  percentageContainer.classList.toggle(resultadoMetrica[0].estilos);
+  percentage.innerText = `${cumplimiento}%`;
+  message.innerText = resultadoMetrica[0].mensaje;
+};
+
+// Renders
+
+const renderHome = () => {
   backBtn.classList.add('inactive');
   appTitle.innerHTML = 'CalculaMSK';
   appTitle.classList.remove('tpa-title');
@@ -34,9 +53,9 @@ function home() {
 
   appContainer.classList.add('inactive');
   calcButton.classList.add('inactive');
-};
+}
 
-function calcTPA() {
+const renderCalcTPA = () => {
   backBtn.classList.remove('inactive');
   appTitle.innerHTML = 'Calculadora de TPA';
   appTitle.classList.remove('home-title');
@@ -52,10 +71,9 @@ function calcTPA() {
   inputsDerivaciones.classList.add('inactive');
   inputsNPS.classList.add('inactive');
   inputsReingreso.classList.add('inactive');
+}
 
-};
-
-function calcDerivaciones() {
+const renderCalcDerivaciones = () => {
   backBtn.classList.remove('inactive');
   appTitle.innerHTML = 'Calculadora de Derivaciones';
   appTitle.classList.remove('home-title');
@@ -71,9 +89,9 @@ function calcDerivaciones() {
   inputsTPA.classList.add('inactive');
   inputsNPS.classList.add('inactive');
   inputsReingreso.classList.add('inactive');
-};
+}
 
-function calcNPS() {
+const renderCalcNPS = () => {
   backBtn.classList.remove('inactive');
   appTitle.innerHTML = 'Calculadora de NPS';
   appTitle.classList.remove('home-title');
@@ -91,7 +109,7 @@ function calcNPS() {
   inputsReingreso.classList.add('inactive');
 }
 
-function calcReingreso() {
+const renderCalcReingreso = () => {
   backBtn.classList.remove('inactive');
   appTitle.innerHTML = 'Calculadora de Reingreso';
   appTitle.classList.remove('home-title');

@@ -362,7 +362,7 @@ input::-webkit-inner-spin-button {
 
 /*Estilos card*/
 
-.card {
+.result-container {
   width: 265px;
   height: 355px;
   background-color: #E1E3E3;
@@ -375,7 +375,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
 }
 
-.container-titulo-card {
+.result-title-container {
   width: 265px;
   height: 50px;
   display: flex;
@@ -384,13 +384,13 @@ input::-webkit-inner-spin-button {
   border-bottom: 2px solid;
 }
 
-.titulo-card {
+.result-title {
   display: inline-block;
   font-size: 20px;
   color: #FFFFFF;
 }
 
-.container-desempenio{
+.performance-container {
   width: 230px;
   height: 185px;
   display: flex;
@@ -401,19 +401,19 @@ input::-webkit-inner-spin-button {
 
 }
 
-.desempenio {
+.performance {
   font-size: 20px;
   color: #565656;
 }
 
-.container-porcentaje {
+.percentage-container {
   width: 200px;
   height: 80px;
   border: 2px solid;
   border-radius: 10px;
 }
 
-.porcentaje {
+.percentage {
   font-size: 60px;
   text-align: center;
   color: #FFFFFF;
@@ -440,7 +440,7 @@ input::-webkit-inner-spin-button {
   border-color: #D76565;
 }
 
-.container-mensaje {
+.message-container {
   height: 120px;
   display: flex;
   flex-direction: column;
@@ -448,12 +448,12 @@ input::-webkit-inner-spin-button {
   align-items: center;
 }
 
-#mensaje {
+#message {
   font-size: 25px;
   color: #565656;
 }
 
-#mensaje-objetivo {
+#goalMessage {
   padding: 0px 32px;
   font-size: 17px;
   text-align: center;
@@ -470,15 +470,12 @@ input::-webkit-inner-spin-button {
   align-items: center;
 }
 
-#calcButton {
+.calc-button {
   width: 210px;
   height: 80px;
   overflow: hidden;
-  background-color: #6FB75B;
   border-top: none;
   border-left: none;
-  border-right: 3px solid #3B8527;
-  border-bottom: 3px solid #3B8527;
   border-radius: 10px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   font-size: 30px;
@@ -503,11 +500,11 @@ input::-webkit-inner-spin-button {
   text-shadow: 1.5px 1.5px 3px #727272;
 }
 
-#cerrado {
+#closedSpan {
   font-size: 50px;
 }
 
-.cerrar {
+.close {
   width: 80px;
   background-color: #F36060;
   text-shadow: 1.5px 1.5px 3px #C34444;

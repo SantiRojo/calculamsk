@@ -4,6 +4,8 @@ const backBtn = document.querySelector('#backBtn');
 const appTitle = document.querySelector('#appTitle');
 
 // HOME
+
+const main = document.querySelector('main');
 const calcsGridContainer = document.querySelector('#calcsGridContainer');
 const tpaCalcItem = document.querySelector('.tpa');
 const derivacionesCalcItem = document.querySelector('.derivaciones');
@@ -14,7 +16,6 @@ const directAccesses = document.querySelector('#directAccesses');
 
 // CALC
 const appContainer = document.querySelector('#appContainer');
-const frontCard = document.querySelector('.front-card');
 const backCard = document.querySelector('.back-card');
 
 const containerTituloCard = document.querySelector('.container-titulo-card');
@@ -64,3 +65,16 @@ const calcularSpan = document.querySelector('#calcular');
 const cerrarSpan = document.querySelector('#cerrado');
 
 
+export {
+  headerSection,
+  backBtn,
+  appTitle,
+  main,
+  calcsGridContainer,
+  tpaCalcItem,
+  derivacionesCalcItem,
+  npsCalcItem,
+  reingresoCalcItem,
+  directAccesses,
+  appContainer,
+}
