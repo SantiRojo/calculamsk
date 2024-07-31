@@ -2,20 +2,20 @@ import { Metric } from "./Metric.mjs";
 
 export class NPS extends Metric {
   constructor() {
-    super();
+    super('NPS', 'nps-title');
     this.objetivo = 60;
     this.promotores;
     this.neutros;
     this.detractores;
   }
 
-  calcularDesempenio(promotores) {
-    let qEncuestas = promotores + this.neutros + this.detractores;
-    return (((promotores - this.detractores) / qEncuestas) * 100).toFixed(2);
+  calcularDesempenio(prom) {
+    let qEncuestas = prom + this.neutros + this.detractores;
+    return (((prom - this.detractores) / qEncuestas) * 100).toFixed(2);
   }
 
   calcularCumplimiento() {
-    return ((this.desempenio / this.objetivo) * 100).toFixed(0);
+    return ((this.desempenio / this.objetivo) * 100).toFixed(2);
   }
 
   calcularNecesario() {

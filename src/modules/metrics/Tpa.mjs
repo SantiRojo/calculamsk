@@ -2,7 +2,8 @@ import { Metric } from "./Metric.mjs";
 
 export class TPA extends Metric {
   constructor() {
-    super();
+    super('TPA', 'tpa-title');
+    this.meta;
   }
 
   calcularNecesario() {
