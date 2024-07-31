@@ -616,11 +616,11 @@ footer p {
 }
 
 .fade-in {
-  animation: fadeIn .1s ease-in 1;
+  animation: fadeIn .3s ease-in-out 1;
 }
 
 .fade-out {
-  animation: fadeOut .1s ease-out 1;
+  animation: fadeOut .3s ease-in-out 1;
 }
 
 @keyframes fadeIn {
