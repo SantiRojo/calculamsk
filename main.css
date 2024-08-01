@@ -72,8 +72,8 @@ a {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 25px;
   grid-template-areas: 
-    "tpa derivaciones"
-    "nps reingreso";
+    "reingreso derivaciones"
+    "nps tpa";
   justify-items: center;
   align-items: center;
 }

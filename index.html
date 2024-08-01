@@ -27,6 +27,13 @@
 
     <section id="calcsGridContainer" class="calcs-grid--container">
 
+      <article class="calc-item reingreso">
+        <div class="calc-icon-container">
+          <img class="calc-icon" src="./media/icons/reingreso.png" alt="reingreso">
+        </div>
+        <h2 class="calc-title">Reingreso</h2>
+      </article>
+
       <article class="calc-item tpa">
         <div class="calc-icon-container">
           <img class="calc-icon" src="./media/icons/tpa.png" alt="TPA">
@@ -46,13 +53,6 @@
           <img class="calc-icon" src="./media/icons/nps.png" alt="nps">
         </div>
         <h2 class="calc-title">NPS</h2>
-      </article>
-
-      <article class="calc-item reingreso">
-        <div class="calc-icon-container">
-          <img class="calc-icon" src="./media/icons/reingreso.png" alt="reingreso">
-        </div>
-        <h2 class="calc-title">Reingreso</h2>
       </article>
       
     </section>
@@ -98,6 +98,16 @@
 		</div>
 	</footer>
 
+  <script type="module" src="./src/modules/metrics/Metric.mjs"></script>
+  <script type="module" src="./src/modules/metrics/Tpa.mjs"></script>
+  <script type="module" src="./src/modules/metrics/Derivaciones.mjs"></script>
+  <script type="module" src="./src/modules/metrics/Nps.mjs"></script>
+  <script type="module" src="./src/modules/metrics/Reingreso.mjs"></script>
+  <script type="module" src="./src/modules/components/Calc.mjs"></script>
+  <script type="module" src="./src/modules/components/TpaCalc.mjs"></script>
+  <script type="module" src="./src/modules/components/DerivacionesCalc.mjs"></script>
+  <script type="module" src="./src/modules/components/NpsCalc.mjs"></script>
+  <script type="module" src="./src/modules/components/ReingresoCalc.mjs"></script>
   <script type="module" src="./src/app.js"></script>
 </body>
 </html>
