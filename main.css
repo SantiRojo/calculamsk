@@ -18,6 +18,20 @@ body {
   align-items: center;
 }
 
+#modalMobileAdvice {
+  display: none;
+  max-width: 500px;
+}
+
+#modalMobileAdvice p {
+  font-size: 16px;
+  font-weight: 300;
+  text-wrap: wrap;
+  text-align: center;
+  margin: 20px 0px;
+  color: #EFEFEF;
+}
+
 /* Estilos Header */
 
 .title-container {
@@ -638,5 +652,19 @@ footer p {
   }
   to {
     opacity: 0%;
+  }
+}
+
+@media (max-width: 900px) {
+ 
+  #header, main, aside {
+    display: none;
+  }
+
+  #modalMobileAdvice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
