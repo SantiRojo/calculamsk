@@ -25,11 +25,12 @@ export class Calculator {
       appTitle.classList.add('home-title');
       appTitle.innerText = 'CalculaMSK';
       headerSection.removeChild(this.backBtn);
+      this.backBtn.classList.remove('fade-in')
       main.removeChild(this.appContainer);
       main.removeChild(this.calcBtnContainer);
-      calcsGridContainer.classList.remove('inactive');
       directAccesses.classList.remove('inactive');
-
+      calcsGridContainer.classList.remove('inactive');
+   
     });
 
     // APP UI
