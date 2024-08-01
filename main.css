@@ -21,17 +21,20 @@ body {
 #modalMobileAdvice {
   display: none;
   max-width: 500px;
+  height: 95vh;
 }
 
 #modalMobileAdvice p {
   padding: 0px 10px;
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 300;
   text-wrap: wrap;
   text-align: center;
   margin: 20px 0px;
   color: #EFEFEF;
 }
+
+
 
 /* Estilos Header */
 
@@ -668,4 +671,9 @@ footer p {
     justify-content: center;
     align-items: center;
   }
+
+  footer {
+    position: relative;
+  }
 }
+
