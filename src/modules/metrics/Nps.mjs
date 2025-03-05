@@ -3,7 +3,7 @@ import { Metric } from "./Metric.mjs";
 export class NPS extends Metric {
   constructor() {
     super('NPS', 'nps-title');
-    this.objetivo = 60;
+    this.objetivo = 65;
     this.promotores;
     this.neutros;
     this.detractores;
